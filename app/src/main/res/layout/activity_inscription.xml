@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inscription"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nom"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit"
+                android:gravity="center"
+                android:hint="nom"
+                android:padding="10dp"
+                android:id="@+id/userName"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="login"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit"
+                android:gravity="center"
+                android:hint="identifiant"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mot de passe"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit"
+                android:gravity="center"
+                android:hint="****"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="operateur"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <RadioGroup
+                android:id="@+id/operator"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit"
+                android:gravity="center"
+                android:hint="operator"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+                <RadioButton
+                    android:id="@+id/telma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telma"/>
+                <RadioButton
+                    android:id="@+id/airtel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Airtel"/>
+                <RadioButton
+                    android:id="@+id/orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Orange"/>
+            </RadioGroup>
+            <Button
+                android:id="@+id/inscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"
+                android:text="S'inscrire"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="7dp"
+                android:layout_marginTop="25dp"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

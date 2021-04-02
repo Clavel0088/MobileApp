@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depôt"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Montant"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:hint="Ex:20000(ar)"
+            android:padding="10dp"
+            android:id="@+id/editMontant"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Code secret"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editCodeSecret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:gravity="center"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btnValidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:text="Valider"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:layout_marginTop="25dp"
+
+            />
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:text="Retour"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:layout_marginTop="25dp"
+            />
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

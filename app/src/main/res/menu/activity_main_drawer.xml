@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="appel"/>
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="offre"/>
+        <item
+            android:id="@+id/nav_depot"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="depot"/>
+        <item
+            android:id="@+id/nav_retrait"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="retrait"/>
+    </group>
+
+</menu>
